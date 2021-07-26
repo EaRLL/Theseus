@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+.vscode/
+archive/
+Latest/conf/xConfig.learnbase.xcfg
+Latest/conf/xConfig.user.xcfg
+Theseus.code.code-workspace
+xTODO
+compress.upx.bat
