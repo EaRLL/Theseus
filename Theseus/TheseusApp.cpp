@@ -1,4 +1,4 @@
-#include "stdafx.h"
+п»ї#include "stdafx.h"
 #include "Theseus.h"
 #include "TheseusApp.h"
 
@@ -304,13 +304,13 @@ void CTheseusView::OnBTheseusCommandLineRecordClick(void)
 
 		int mmres;
 
-		wavform.wFormatTag = WAVE_FORMAT_PCM;   //Используемый формат
-		wavform.nChannels = 2;                  //Кол-во каналов
-		wavform.nSamplesPerSec = 44100;         //Записей в секунду (дискретизация, Гц)
-		wavform.nAvgBytesPerSec = 176400;       //Байт/с
+		wavform.wFormatTag = WAVE_FORMAT_PCM;   //РСЃРїРѕР»СЊР·СѓРµРјС‹Р№ С„РѕСЂРјР°С‚
+		wavform.nChannels = 2;                  //РљРѕР»-РІРѕ РєР°РЅР°Р»РѕРІ
+		wavform.nSamplesPerSec = 44100;         //Р—Р°РїРёСЃРµР№ РІ СЃРµРєСѓРЅРґСѓ (РґРёСЃРєСЂРµС‚РёР·Р°С†РёСЏ, Р“С†)
+		wavform.nAvgBytesPerSec = 176400;       //Р‘Р°Р№С‚/СЃ
 		wavform.nBlockAlign = 4;                // Bits / 8 * Channels
-		wavform.wBitsPerSample = 16;            //Разрядность 8 или 16
-		wavform.cbSize = sizeof(wavform);       //Размер структуры
+		wavform.wBitsPerSample = 16;            //Р Р°Р·СЂСЏРґРЅРѕСЃС‚СЊ 8 РёР»Рё 16
+		wavform.cbSize = sizeof(wavform);       //Р Р°Р·РјРµСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹
 
 		mmres = waveInOpen(&hwi, WAVE_MAPPER, &wavform, NULL, 0, CALLBACK_WINDOW);
 		if (mmres != MMSYSERR_NOERROR)
@@ -620,3 +620,4 @@ LRESULT CTheseusView::OnNcHitTest ( CPoint point ) // move window
 		return HTCAPTION;
 	return ret;
 }
+

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 class CFlatButton : public CButton
 {
@@ -20,7 +20,7 @@ public:
 
 	bool m_bMouseInHouse;
 	bool m_bClicked;
-
+	
 	bool CheckOpt;
 	bool Checked;
 

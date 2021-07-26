@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 void        xRunCommand                   (CString commandStr);
 bool        xRunCommand_GetValue          (const std::map<CString, CString>& my_map, CString key, CString& out);

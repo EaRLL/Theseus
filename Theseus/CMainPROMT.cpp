@@ -1,4 +1,4 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 #include "CMainPROMT.h"
 #include "xRunCommand.h"
 #include "TheseusCore.h"

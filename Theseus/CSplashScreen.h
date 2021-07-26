@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "TheseusCore.h"
 
@@ -15,7 +15,7 @@ public:
 	CBitmap Background;
 	CSize bitmapSize;
 	CBrush BrushHol;
-
+	
 	int TimeSec;
 	int m_timer = 0;
 	void OnTimer ( UINT_PTR nIDEvent );

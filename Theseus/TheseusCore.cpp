@@ -1,4 +1,4 @@
-#include "stdafx.h"
+п»ї#include "stdafx.h"
 #include "TheseusCore.h"
 
 TheseusOptions so;
@@ -174,41 +174,41 @@ long int xGetUnixTime()
 CString xGetTime (int FormatType, CString DateTimeInfo)
 {
 	std::map <int, CString> CalendarMapMonth;
-	CalendarMapMonth.insert(std::pair<int, CString>({ 1, L"Января" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 2, L"Февраля" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 3, L"Марта" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 4, L"Апреля" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 5, L"Мая" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 6, L"Июня" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 7, L"Июля" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 8, L"Августа" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 9, L"Сентября" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 10, L"Октября" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 11, L"Ноября" }));
-	CalendarMapMonth.insert(std::pair<int, CString>({ 12, L"Декабря" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 1, L"РЇРЅРІР°СЂСЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 2, L"Р¤РµРІСЂР°Р»СЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 3, L"РњР°СЂС‚Р°" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 4, L"РђРїСЂРµР»СЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 5, L"РњР°СЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 6, L"РСЋРЅСЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 7, L"РСЋР»СЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 8, L"РђРІРіСѓСЃС‚Р°" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 9, L"РЎРµРЅС‚СЏР±СЂСЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 10, L"РћРєС‚СЏР±СЂСЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 11, L"РќРѕСЏР±СЂСЏ" }));
+	CalendarMapMonth.insert(std::pair<int, CString>({ 12, L"Р”РµРєР°Р±СЂСЏ" }));
 
 	std::map <int, CString> CalendarMapMonthFull;
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 1, L"Январь" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 2, L"Февраль" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 3, L"Март" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 4, L"Апрель" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 5, L"Май" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 6, L"Июнь" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 7, L"Июль" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 8, L"Август" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 9, L"Сентябрь" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 10, L"Октябрь" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 11, L"Ноябрь" }));
-	CalendarMapMonthFull.insert(std::pair<int, CString>({ 12, L"Декабрь" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 1, L"РЇРЅРІР°СЂСЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 2, L"Р¤РµРІСЂР°Р»СЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 3, L"РњР°СЂС‚" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 4, L"РђРїСЂРµР»СЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 5, L"РњР°Р№" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 6, L"РСЋРЅСЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 7, L"РСЋР»СЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 8, L"РђРІРіСѓСЃС‚" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 9, L"РЎРµРЅС‚СЏР±СЂСЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 10, L"РћРєС‚СЏР±СЂСЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 11, L"РќРѕСЏР±СЂСЊ" }));
+	CalendarMapMonthFull.insert(std::pair<int, CString>({ 12, L"Р”РµРєР°Р±СЂСЊ" }));
 
 	std::map <CString, CString> CalendarMapWeeks;
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Monday", L"Понедельник" }));
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Tuesday", L"Вторник" }));
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Wednesday", L"Среда" }));
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Thursday", L"Четверг" }));
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Friday", L"Пятница" }));
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Saturday", L"Суббота" }));
-	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Sunday", L"Воскресенье" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Monday", L"РџРѕРЅРµРґРµР»СЊРЅРёРє" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Tuesday", L"Р’С‚РѕСЂРЅРёРє" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Wednesday", L"РЎСЂРµРґР°" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Thursday", L"Р§РµС‚РІРµСЂРі" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Friday", L"РџСЏС‚РЅРёС†Р°" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Saturday", L"РЎСѓР±Р±РѕС‚Р°" }));
+	CalendarMapWeeks.insert(std::pair<CString, CString>({ L"Sunday", L"Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ" }));
 
 	int DaysNonVYear[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	int DaysVYear[] =    { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
@@ -248,25 +248,25 @@ CString xGetTime (int FormatType, CString DateTimeInfo)
 		DateTimeInfo.Replace(L"%d", TimeInfo);
 
 		if (FormatType == 2)
-			TimeInfo = L"Сегодня " + rawtime.Format(DateTimeInfo);
+			TimeInfo = L"РЎРµРіРѕРґРЅСЏ " + rawtime.Format(DateTimeInfo);
 		else if (FormatType == 3)
-			TimeInfo = L"Завтра будет " + rawtime.Format(DateTimeInfo);
+			TimeInfo = L"Р—Р°РІС‚СЂР° Р±СѓРґРµС‚ " + rawtime.Format(DateTimeInfo);
 		else if (FormatType == 4)
-			if (CalendarMapWeeks[rawtime.Format(L"%A")] == L"Понедельник"
-				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"Вторник"
-				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"Четверг")
-				TimeInfo = L"Вчера был " + rawtime.Format(DateTimeInfo);
-			else if(CalendarMapWeeks[rawtime.Format(L"%A")] == L"Среда"
-				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"Пятница"
-				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"Суббота")
-				TimeInfo = L"Вчера была " + rawtime.Format(DateTimeInfo);
+			if (CalendarMapWeeks[rawtime.Format(L"%A")] == L"РџРѕРЅРµРґРµР»СЊРЅРёРє"
+				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"Р’С‚РѕСЂРЅРёРє"
+				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"Р§РµС‚РІРµСЂРі")
+				TimeInfo = L"Р’С‡РµСЂР° Р±С‹Р» " + rawtime.Format(DateTimeInfo);
+			else if(CalendarMapWeeks[rawtime.Format(L"%A")] == L"РЎСЂРµРґР°"
+				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"РџСЏС‚РЅРёС†Р°"
+				|| CalendarMapWeeks[rawtime.Format(L"%A")] == L"РЎСѓР±Р±РѕС‚Р°")
+				TimeInfo = L"Р’С‡РµСЂР° Р±С‹Р»Р° " + rawtime.Format(DateTimeInfo);
 			else
-				TimeInfo = L"Вчера было " + rawtime.Format(DateTimeInfo);
+				TimeInfo = L"Р’С‡РµСЂР° Р±С‹Р»Рѕ " + rawtime.Format(DateTimeInfo);
 	}
 	else if (FormatType == 5)
 	{
 		TimeInfoMonth = _wtoi(rawtime.Format(L"%m"));
-		TimeInfo = L"В этом месяце "
+		TimeInfo = L"Р’ СЌС‚РѕРј РјРµСЃСЏС†Рµ "
 			+ xGetStrTime(
 				(
 					xCheckIsLeapYear(_wtoi(rawtime.Format(L"%Y")))
@@ -315,11 +315,11 @@ CString xGetStrTime(int intTime, CString TimeType)
 {
 	CString rTime, sTemp;
 
-	CStringArray TimeSec; TimeSec.Add(L"секунда"); TimeSec.Add(L"секунды"); TimeSec.Add(L"секунд");
-	CStringArray TimeMin; TimeMin.Add(L"минута"); TimeMin.Add(L"минуты"); TimeMin.Add(L"минут");
-	CStringArray TimeHour; TimeHour.Add(L"час"); TimeHour.Add(L"часа"); TimeHour.Add(L"часов");
-	CStringArray TimeDay; TimeDay.Add(L"день"); TimeDay.Add(L"дня"); TimeDay.Add(L"дней");
-	CStringArray TimeYrs; TimeYrs.Add(L"год"); TimeYrs.Add(L"года"); TimeYrs.Add(L"лет");
+	CStringArray TimeSec; TimeSec.Add(L"СЃРµРєСѓРЅРґР°"); TimeSec.Add(L"СЃРµРєСѓРЅРґС‹"); TimeSec.Add(L"СЃРµРєСѓРЅРґ");
+	CStringArray TimeMin; TimeMin.Add(L"РјРёРЅСѓС‚Р°"); TimeMin.Add(L"РјРёРЅСѓС‚С‹"); TimeMin.Add(L"РјРёРЅСѓС‚");
+	CStringArray TimeHour; TimeHour.Add(L"С‡Р°СЃ"); TimeHour.Add(L"С‡Р°СЃР°"); TimeHour.Add(L"С‡Р°СЃРѕРІ");
+	CStringArray TimeDay; TimeDay.Add(L"РґРµРЅСЊ"); TimeDay.Add(L"РґРЅСЏ"); TimeDay.Add(L"РґРЅРµР№");
+	CStringArray TimeYrs; TimeYrs.Add(L"РіРѕРґ"); TimeYrs.Add(L"РіРѕРґР°"); TimeYrs.Add(L"Р»РµС‚");
 
 	CStringArray mapTimeType;
 
@@ -423,3 +423,4 @@ CString xMakeLower(CString str)
 	}
 	return strret;
 }
+

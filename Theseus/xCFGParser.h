@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 std::map <int, CString>     _xInitalizeFile(std::wifstream &optFile);
 std::map <int, CString>     _xParseCfgText(std::map <int, CString> _s_CfgText);

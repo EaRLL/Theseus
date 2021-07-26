@@ -1,12 +1,13 @@
-#pragma once
+п»ї#pragma once
 
 #ifndef __AFXWIN_H__
-	#error "включить stdafx.h до включения этого файла в PCH"
+	#error "РІРєР»СЋС‡РёС‚СЊ stdafx.h РґРѕ РІРєР»СЋС‡РµРЅРёСЏ СЌС‚РѕРіРѕ С„Р°Р№Р»Р° РІ PCH"
 #endif
 
 #include "TheseusCore.h"
 #include "TheseusApp.h"
 #include "CSplashScreen.h"
+
 
 class CTheseusApp : public CWinApp
 {
@@ -20,3 +21,4 @@ public:
 };
 
 extern CTheseusApp theApp;
+

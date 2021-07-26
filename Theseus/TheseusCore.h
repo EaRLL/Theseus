@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "Theseus.strings.h"
 #include "resource.h"
@@ -13,7 +13,7 @@ CRect     xGetMonitorRect(CWnd* pWnd);
 void      xCreateFastFont ( CFont& pFont, INT nHeight, INT nWeight, CString nFontName );
 BOOL      xIsRunAsAdmin ( );
 long int  xGetUnixTime();
-CString   xGetTime(int FormatType = 0, CString DateTimeInfo = "Текущее время %Y, %A, %B %d, %X");
+CString   xGetTime(int FormatType = 0, CString DateTimeInfo = "РўРµРєСѓС‰РµРµ РІСЂРµРјСЏ %Y, %A, %B %d, %X");
 int       xGetDays(int month, int year);
 bool      xCheckIsLeapYear(int year);
 CString   xGetStrTime(int intTime, CString TimeType);
@@ -66,7 +66,7 @@ public:
 	CString  OPT_APP_CONFIG_FILE = L"xConfig" + OPT_APP_CONFIG_FILE_EXT;
 	CString  OPT_APP_CONFIG_LEARNBASE = L"xConfig.learnbase" + OPT_APP_CONFIG_FILE_EXT;
 	bool     OPT_APP_CONFIG_RECORD_STAYONTOP = true;
-	CString  OPT_APP_CONFIG_UPDATECFG_ALIASES = L"обновить|refresh|update";
+	CString  OPT_APP_CONFIG_UPDATECFG_ALIASES = L"РѕР±РЅРѕРІРёС‚СЊ|refresh|update";
 	CString  OPT_APP_CONFIG_MAGICKEY = L"0";
 	INT      OPT_SPLASH_WIDTH  = 450; // CTheseus
 	INT      OPT_SPLASH_HEIGHT = 250; // CTheseus
@@ -79,13 +79,13 @@ public:
 	std::map <int, CString> x_bParBlock;
 
 	/** COMMANDS | OPTIONS START **/
-	CString   OPT_COMMANDALS_RUN = L"run|open|открыть|запустить";
+	CString   OPT_COMMANDALS_RUN = L"run|open|РѕС‚РєСЂС‹С‚СЊ|Р·Р°РїСѓСЃС‚РёС‚СЊ";
 	std::map <CString, CString> xOptions_Command_Run;
 
-	CString   OPT_COMMANDALS_INTSEARCH = L"search|поиск";
+	CString   OPT_COMMANDALS_INTSEARCH = L"search|РїРѕРёСЃРє";
 	std::map <CString, CString> xOptions_Command_InternetSearch;
 
-	CString   OPT_COMMANDALS_STOP = L"stop|остановить";
+	CString   OPT_COMMANDALS_STOP = L"stop|РѕСЃС‚Р°РЅРѕРІРёС‚СЊ";
 	std::map <CString, CString> xOptions_Command_Stop;
 	/** COMMANDS | OPTIONS END   **/
 
@@ -102,5 +102,6 @@ public:
 	bool timerClocks = true;
 
 };
+
 
 extern TheseusOptions so;
