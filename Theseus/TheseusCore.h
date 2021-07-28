@@ -20,6 +20,7 @@ CString   xGetStrTime(int intTime, CString TimeType);
 void      xInitEnvironment ( );
 CString   xMakeLower(CString str);
 CString   xMakeRand(int count);
+CString   xGetFolder(int type);
 
 class TheseusOptions
 {
@@ -60,8 +61,8 @@ public:
 	INT      OPT_APP_WIDTH  = 450; // CTheseus
 	INT      OPT_APP_HEIGHT = 250; // CTheseus
 	CString  OPT_APP_SHOWPOS = L"center"; // CTheseus //center, top-left, top-center, top-right, bottom-left, bottom-center, bottom-right
-	CString  OPT_APP_FOLDER = L"d:/Dev/Projects/Theseus/Latest/";
-	CString  OPT_APP_CONFIG_FOLDER = L"d:/Dev/Projects/Theseus/Latest/conf/";
+	CString  OPT_APP_FOLDER = L"";
+	CString  OPT_APP_CONFIG_FOLDER = L"conf/";
 	CString  OPT_APP_CONFIG_FILE_EXT = L".xcfg";
 	CString  OPT_APP_CONFIG_FILE = L"xConfig" + OPT_APP_CONFIG_FILE_EXT;
 	CString  OPT_APP_CONFIG_LEARNBASE = L"xConfig.learnbase" + OPT_APP_CONFIG_FILE_EXT;

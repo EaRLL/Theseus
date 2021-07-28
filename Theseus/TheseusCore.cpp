@@ -424,3 +424,25 @@ CString xMakeLower(CString str)
 	return strret;
 }
 
+CString xGetFolder(int type)
+{
+	CString folderAr = L"";
+	std::wstring filePathX = L"";
+	std::wstring::size_type pos;
+	TCHAR buffer[MAX_PATH] = { 0 };
+
+	switch (type)
+	{
+	case 1:
+		GetModuleFileName(NULL, buffer, MAX_PATH);
+		pos = std::wstring(buffer).find_last_of(L"\\/");
+		filePathX = std::wstring(buffer).substr(0, pos);
+
+		folderAr = filePathX.c_str();
+		break;
+	default:
+		folderAr = __string_TheseusCore_NoFolder;
+	}
+
+	return folderAr;
+}

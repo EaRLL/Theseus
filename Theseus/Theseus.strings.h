@@ -46,3 +46,5 @@ const CString __string_TheseusApp_SayAgain = L"Повторите команду
 const CString __string_TheseusApp_SayError = L"Непредвиденная ошибка. Попробуйте ещё раз";
 const CString __string_TheseusApp_SayAgainOneMore = L"Ошибка при записи команды. Возможно нет связи с микрофоном";
 const CString __string_TheseusApp_SayNotMagic = L"В конфигурации отсутствует ключ [opt_app_config_magickey]";
+
+const CString __string_TheseusCore_NoFolder = L"Ошибка при указании пути к папке";

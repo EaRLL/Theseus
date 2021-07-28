@@ -137,7 +137,7 @@ bool xRunCommand_xRefreshCFG(CString Command, CString &Response)
 	if (boost::regex_match(Command, matches,
 		boost::tregex(so.OPT_APP_CONFIG_UPDATECFG_ALIASES)))
 	{
-		std::wifstream optFile(so.OPT_APP_CONFIG_FOLDER + so.OPT_APP_CONFIG_FILE);
+		std::wifstream optFile(so.OPT_APP_CONFIG_FILE);
 
 		theApp.pMainFrame->l_TheseusResponseLine.SetWindowText(__string_xRunCommand_ParsingCFG);
 		theApp.pMainFrame->RedrawWindow();

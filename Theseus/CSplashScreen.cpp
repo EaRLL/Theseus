@@ -54,7 +54,12 @@ void CSplashScreen::InitaliseApp ( void )
 
 	l_cmndShrpLoad.Create(L"", WS_CHILD | WS_VISIBLE, CRect(80, 120, 100, 120), this, IDC_L_SPLASHPROCESSLOAD);
 	
-	std::wifstream optFile ( so.OPT_APP_CONFIG_FOLDER + so.OPT_APP_CONFIG_FILE );
+	so.OPT_APP_FOLDER = xGetFolder(1);
+	so.OPT_APP_FOLDER.Replace(L"\\", L"/");
+	so.OPT_APP_CONFIG_FOLDER = so.OPT_APP_FOLDER + "/" + so.OPT_APP_CONFIG_FOLDER;
+	so.OPT_APP_CONFIG_FILE = so.OPT_APP_CONFIG_FOLDER + so.OPT_APP_CONFIG_FILE;
+
+	std::wifstream optFile ( so.OPT_APP_CONFIG_FILE );
 
 	l_cmndShrp.SetWindowTextW (__string_CSplashScreen_Parsing);
 	RedrawWindow ( );

@@ -111,7 +111,7 @@ void CTheseusView::CreateChildControls ( void )
 	TheseusCommandLine.Create ( ES_MULTILINE | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE, CRect ( 25, theApp.pMainFrame->WindowHeight - 30, theApp.pMainFrame->WindowWidth - 50, theApp.pMainFrame->WindowHeight - 10 ), this, IDC_E_COMMANDLINE);
 	TheseusCommandLine.SetFont ( &f_CommLineTx );
 	TheseusCommandLine.SetFocus ( );
-	
+
 	/*if (!BASS_RecordInit(-1))
 		Error("Can't initialize device");
 	// start recording (44100hz mono 16-bit)
@@ -171,7 +171,7 @@ void CTheseusView::LearnCommandWindow (CString Command)
 	pLearnWindowFrame->SetWindowPos(NULL, pLearnWindowFrame->WindowLeft, pLearnWindowFrame->WindowTop, pLearnWindowFrame->WindowWidth, pLearnWindowFrame->WindowHeight, SWP_NOOWNERZORDER | SWP_NOZORDER | SWP_NOACTIVATE | SWP_NOSENDCHANGING);
 	pLearnWindowFrame->ShowWindow(SW_SHOW);
 	pLearnWindowFrame->UpdateWindow();
-
+	
 	return afx_msg void();
 }
 
@@ -472,8 +472,8 @@ void CTheseusView::OnBTheseusCommandLineRecordClick(void)
 		}
 
 		theApp.pMainFrame->RedrawWindow();
-		//remove("speech.xml");
-		//remove("speech.wav");
+		remove("speech.xml");
+		remove("speech.wav");
 	}
 }
 
