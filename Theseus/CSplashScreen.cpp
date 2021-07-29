@@ -75,14 +75,14 @@ void CSplashScreen::InitaliseApp ( void )
 		const std::locale utf8_locale = std::locale ( empty_locale, converter );
 		optFile.imbue ( utf8_locale );
 		so.F_OPT_LINES = _xInitalizeFile ( optFile );
-		_xParseCfg ( so.F_OPT_LINES );
+		_xParseCfg(so.F_OPT_LINES);
 
 		optFile.close ( );
 
 		l_cmndShrp.SetWindowTextW (__string_CSplashScreen_Initalize);
 		RedrawWindow ( );
 
-		SetTimer ( 1, 1050, NULL );
+		SetTimer ( 1, 500, NULL );
 	}
 	else
 	{

@@ -67,7 +67,7 @@ public:
 	CString  OPT_APP_CONFIG_FILE = L"xConfig" + OPT_APP_CONFIG_FILE_EXT;
 	CString  OPT_APP_CONFIG_LEARNBASE = L"xConfig.learnbase" + OPT_APP_CONFIG_FILE_EXT;
 	bool     OPT_APP_CONFIG_RECORD_STAYONTOP = true;
-	CString  OPT_APP_CONFIG_UPDATECFG_ALIASES = L"обновить|refresh|update";
+	CString  OPT_APP_CONFIG_UPDATECFG_ALIASES = L"^(обновить|refresh|update)$";
 	CString  OPT_APP_CONFIG_MAGICKEY = L"0";
 	INT      OPT_SPLASH_WIDTH  = 450; // CTheseus
 	INT      OPT_SPLASH_HEIGHT = 250; // CTheseus

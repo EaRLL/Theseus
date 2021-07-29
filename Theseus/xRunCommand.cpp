@@ -376,10 +376,17 @@ void xRunCommand(CString commandStr)
 					}
 				}
 
-				SearchUrl.Replace(L"%search_word%", SearchText);
-				ShellExecute(NULL, L"open", SearchUrl, NULL, NULL, SW_SHOWDEFAULT);
-				RESPONSE = __string_xRunCommand_RunSearchMsg;
-				RESPONSE.Replace(L"%01", (!SearchText.IsEmpty() ? L" " + __string_xRunCommand_RunSearchMsgAdd + L" \"" + SearchText + L"\"" : L""));
+				if (SearchUrl.IsEmpty())
+				{
+					RESPONSE = __string_xRunCommand_RunSearchEmpty;
+				}
+				else
+				{
+					SearchUrl.Replace(L"%search_word%", SearchText);
+					ShellExecute(NULL, L"open", SearchUrl, NULL, NULL, SW_SHOWDEFAULT);
+					RESPONSE = __string_xRunCommand_RunSearchMsg;
+					RESPONSE.Replace(L"%01", (!SearchText.IsEmpty() ? L" " + __string_xRunCommand_RunSearchMsgAdd + L" \"" + SearchText + L"\"" : L""));
+				}
 			} // END Command: SEARCH
 			else
 			{

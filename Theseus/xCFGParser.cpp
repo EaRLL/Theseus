@@ -474,8 +474,6 @@ void _xParseCfg(std::map <int, CString> _s_CfgText)
 
 					else if (ope == "OPT_APP_SHOWPOS" && !dec.IsEmpty())
 						so.OPT_APP_SHOWPOS = dec;
-					else if (ope == "OPT_APP_CONFIG_LEARNBASE" && !dec.IsEmpty())
-						so.OPT_APP_CONFIG_LEARNBASE = dec;
 					else if (ope == "OPT_APP_CONFIG_RECORD_STAYONTOP" && !dec.IsEmpty())
 						so.OPT_APP_CONFIG_RECORD_STAYONTOP = (dec == L"1" ? 1 : 0);
 					else if (ope == "OPT_APP_CONFIG_UPDATECFG_ALIASES" && !dec.IsEmpty())
